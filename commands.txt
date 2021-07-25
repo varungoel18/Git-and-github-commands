@@ -1,0 +1,133 @@
+git config --version
+
+git config --global user.name " " 
+
+git config --global user.email " "
+
+git config --list
+
+mkdir f1 f2 f3
+
+mkdir -p f2/f5
+
+rmdir f1
+
+rmdir -R f1 (if there are files in the directory)
+
+touch script.js
+
+tounch f4/index.html
+
+rm script.js
+
+cp script.js file1/new_script.js
+
+mv script.js f1/new_script.js
+
+mv script.js hello.js (Rename)
+
+git init
+
+git add index.html
+
+git status
+
+git commit -m" " 
+
+git log
+
+rm -rf .git
+
+git diff
+
+git diff --staged
+
+touch .gitignore
+
+in .gitignore write *.log to ignore all files which have extension as .log
+
+write the name of file in .gitignore file to ignore that file
+
+git rm -f abc/index.log (automatically changes will be staged)
+
+git mv index.html home.html (automatically changes will be staged)
+
+git rm --cached .DS_Store
+
+after this it will be in .gitignore
+
+git restore --staged filename (to unstage the stage file)
+
+git checkout -- filename (get code to the previous version)
+
+git checkout -f ( rollback all files)
+
+git config --global alias.shortname realname (to make large commands small)
+
+git branch -v ( to see which all branches are present)
+
+git branch nameofnewbranch ( to make new branch)
+
+git checkout branchname (to move to other branch)
+
+git checkout -b branchname (to construct and go to new branch made)
+
+git log --oneline ( all branches are displayed in online)
+
+git log --oneline --graph
+
+git log --oneline --graph --all ( Display all the commits i the graph form)
+
+git branch -d branchname (to delete after merged to the main branch)
+
+git branch -D branchname ( to delete branch without merging)
+
+git merge impfix
+
+git rebase master ( does the same function like merging but in this new branch is writing down the code )
+
+git push -u origin main
+
+git push origin main
+
+git fetch ( to download the changes )
+
+git merge origin/master ( to get changes in working directory)
+
+git remote my-remote ( to generate new remote)
+
+git remote remove my-remote ( to remove remote)
+
+git pull = git fetch + git merge
+
+git pull origin master ( same work as git fetch)
+
+git show commitid (to see what changes we have done only first 4-6 letters of commit id is needed)
+
+git stash ( to make project/feature on the hold)
+
+git stash list
+
+git stash apply stash@{0}
+
+git stash drop stash@{0}
+
+git clean -f -d ( to remove all the modification made )
+
+git commit --amend (commit message is changed ) 
+
+git checkout commitid ( to go to particular commit )
+
+git switch - ( get back to the main branch )
+
+git revert commitid( to remove the modification that were made in that particular commit )
+
+git revert -n commitid ( automatically changes will be staged )
+
+git revert --abort ( to delete the revert task )
+
+git reset --soft commitid ( delete all commit that are done above mentioned commit id , still have the chance to restore them)
+
+git reset --hard commitid ( delete all commit that are done above mentioned commit id , do not have the chance to restore them)
+
+git cherry-pick commitid ( takes the particular commit id and merge it )
